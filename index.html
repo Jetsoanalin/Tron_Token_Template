@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Record Token Test</title>
+    </head>
+    <body>
+
+    <button onclick="connectWallet()">Connect to Wallet</button><br><br>
+    <label for="address">Your Tronlink Address:</label><br>
+    <input type="text" id="address" name="address" readonly><br>
+    
+    <label for="name">Token Name:</label><br>
+    <input type="text" id="name" name="name" ><br><br>
+
+    <label for="symbol">Token Sybol:</label><br>
+    <input type="text" id="symbol" name="symbol" ><br><br>
+
+    <label for="supply">Total Supply:</label><br>
+    <input type="text" id="supply" name="supply" ><br><br>
+
+
+    <button onclick="deoployToken()">Deploy Token</button><br><br>
+    <label for="response">Contract Address:</label><br>
+    <input type="text" id="response" name="response" readonly><br><br>
+
+
+    <span id="hashresult"></span>
+    <span id="hashresult1"></span>
+
+
+     <script type="text/javascript" src="tokenRecord.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.0/dist/web3.min.js"></script>
+
+    </body>
+</html>
